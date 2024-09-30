@@ -1,0 +1,60 @@
+// Fibonacci 
+FUNCTION fibonacci(n: INTEGER): INTEGER
+VAR
+    result: INTEGER
+BEGIN
+    IF n = 0 THEN
+        RETURN result := 0
+    ELSE IF n = 1 THEN
+        RETURN result := 1
+    ELSE
+        RETURN result := fibonacci(n - 1) + fibonacci(n - 2)
+    END_IF
+
+    RETURN result 
+END
+
+
+ALGORITHM Fibonacci(n)
+  INPUT: (n = 10 INTEGER) // n is the position of the Fibonacci number
+  OUTPUT: Fibonacci(10) // The Fibonacci number at position n
+
+  IF n ≤ 0 THEN
+    RETURN 0
+  ELSE IF n == 1 THEN
+    RETURN 1
+  ELSE
+    RETURN Fibonacci(n-1) + Fibonacci(n-2)
+  END IF
+END ALGORITHM
+
+/* This function calculates the nth Fibonacci number.
+
+Fibonacci Sequence:
+0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55,
+
+Each number is the sum of the two preceding numbers:
+
+- Fibonacci(0) = 0
+- Fibonacci(1) = 1
+- Fibonacci(2) = 1 that is Fibonacci(1) + Fibonacci(0) = 1 + 0 = 1
+- Fibonacci(3) = 2 that is Fibonacci(2) + Fibonacci(1) = 1 + 1 = 2
+- Fibonacci(4) = 3 that is Fibonacci(3) + Fibonacci(2) = 2 + 1 = 3 
+- Fibonacci(5) = 5 that is Fibonacci(4) + Fibonacci(3) = 3 + 2 = 5
+- Fibonacci(6) = 8 that is Fibonacci(5) + Fibonacci(4) = 5 + 3 = 8
+- Fibonacci(7) = 13 that is Fibonacci(6) + Fibonacci(5) = 8 + 5 = 13
+- Fibonacci(8) = 21 that is Fibonacci(7) + Fibonacci(6) = 13 + 8 = 21
+- Fibonacci(9) = 34 that is Fibonacci(8) + Fibonacci(7) = 21 + 13 = 34
+- Fibonacci(10) = 55 that is Fibonacci(9) + Fibonacci(8) = 34 + 21 = 55
+
+Finally, the function returns the 10th Fibonacci number. which is 55 in this case, that is the sum of the two preceding numbers 34 + 21 = 55.
+
+The Fibonacci sequence is a series of numbers in which each number is the sum of the two preceding ones. It starts with 0 and 1. The Fibonacci sequence is defined by the recurrence relation:
+
+Function Explanation:
+
+function fibonacci(n) {
+  if (n <= 0) return 0; // base case: Fibonacci(0) = 0
+  if (n === 1) return 1; // base case: Fibonacci(1) = 1
+  return fibonacci(n - 1) + fibonacci(n - 2); // recursive case*/
+

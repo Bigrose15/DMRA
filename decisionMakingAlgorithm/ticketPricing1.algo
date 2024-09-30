@@ -1,0 +1,33 @@
+//FUNCTION that determines the price of a ticket based on the age of the person in Algorithm Syntax.
+VAR
+    age: INTEGER
+    price: INTEGER
+BEGIN
+
+    Read(age)
+
+    IF age <= 12 THEN
+        price := 10
+    ELSE IF age <= 17 THEN
+        price := 15
+    ELSE
+        price := 20
+    END_IF
+
+    Write(price)
+END
+
+//FUNCTION that determines the price of a ticket based on the age of the person in JavaScript Syntax.
+// var age = prompt("Enter your age:");
+
+// function getTicketPrice(age) {
+//   if (age <= 12) {
+//     return 10;
+//   } else if (age >= 13 && age <= 17) {
+//     return 15;
+//   } else {
+//     return 20;
+//   }
+// }
+
+// console.log("Ticket price: $" + getTicketPrice(parseInt(age)));

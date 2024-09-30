@@ -1,0 +1,86 @@
+TASK
+Weather Clothing Adviser: Develop a program that asks the user for the current temperature and whether it is raining or not. Based on this information, advise the user on what clothing to wear.
+
+TASK DONE:
+
+FUNCTION WeatherClothingAdviser()
+  INPUT temperature (in Celsius)
+  INPUT isRaining (TRUE/FALSE)
+
+  IF temperature < 10 AND isRaining = TRUE THEN
+    PRINT "Wear warm and waterproof clothing"
+    PRINT "Waterproof jacket"
+    PRINT "Warm socks and gloves"
+
+  ELSE IF temperature < 10 AND isRaining = FALSE THEN
+    PRINT "Wear warm clothing"
+    PRINT "Sweater or fleece"
+    PRINT "Warm socks"
+
+  ELSE IF temperature >= 10 AND temperature < 20 AND isRaining = TRUE THEN
+    PRINT "Wear lightweight waterproof clothing"
+    PRINT "Waterproof jacket"
+
+  ELSE IF temperature >= 10 AND temperature < 20 AND isRaining = FALSE THEN
+    PRINT "Wear casual clothing"
+    PRINT "T-shirt or blouse"
+    PRINT "Sneakers or sandals"
+
+  ELSE IF temperature >= 20 AND isRaining = TRUE THEN
+    PRINT "Wear lightweight breathable clothing"
+    PRINT "Waterproof jacket"
+
+  ELSE IF temperature >= 20 AND isRaining = FALSE THEN
+    PRINT "Wear summer clothing:"
+    PRINT "T-shirt or tank top"
+    PRINT "Shorts"
+    PRINT "Sandals or flip-flops"
+
+END FUNCTION
+
+
+
+// This algorithm uses temperature and rain conditions to advise on clothing:
+
+
+// Cold and raining: Warm and waterproof clothing
+// Cold and not raining: Warm clothing
+// Mild and raining: Lightweight waterproof clothing
+// Mild and not raining: Casual clothing
+// Hot and raining: Lightweight breathable clothing
+// Hot and not raining: Summer clothing
+
+
+// //ALGORITHM clothing_advice
+// VAR
+//     temperature: INTEGER
+//     is_raining: BOOLEAN
+// BEGIN
+//     Read(temperature)
+
+//     Read(is_raining)
+
+//     IF is_raining = TRUE THEN
+//         IF temperature < 10 THEN
+//             Write("Wear a warm coat and take an umbrella.")
+//         ELSE IF temperature < 20 THEN
+//             Write("Wear a jacket and take an umbrella.")
+//         ELSE
+//             Write("Wear light clothing and take an umbrella.")
+//         END_IF
+//     ELSE
+//         IF temperature < 10 THEN
+//             Write("Wear a warm coat.")
+//         ELSE IF temperature < 20 THEN
+//             Write("Wear a jacket.")
+//         ELSE
+//             Write("Wear light clothing.")
+//         END_IF
+//     END_IF
+// END
+
+
+
+
+
+
